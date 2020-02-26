@@ -9,7 +9,7 @@
 import UIKit
 import Firebase
 
-class ViewController: UIViewController, UITextFieldDelegate {
+class LoginViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var storeNameTextEdit: UITextField!
     
@@ -36,21 +36,13 @@ class ViewController: UIViewController, UITextFieldDelegate {
             }
             else
             {
-                if querySnapshot?.documents.count ?? 0 < 1
-                {
-                    print("Error getting documents: \(err)")
-                    let alertController = UIAlertController(title: "Failed!", message: "No Store With that name" , preferredStyle: .alert)
-                    let okAction = UIAlertAction(title: "Ok", style: .default)
-                    alertController.addAction(okAction)
-                    self.present(alertController,animated: true)
-                }
                
                 for document in querySnapshot!.documents
                 {
                     print("\(document.documentID) => \(document.data())")
-                    UserDefaults.standard.set(document.data()["NumToRecieve"] as? Int, forKey: "PointsNeeded")
+                    UserDefaults.standard.set(document.data()["NumToRecieve"] as? Int ?? 0, forKey: "PointsNeeded" )
                     UserDefaults.standard.set(self.storeNameTextEdit.text ?? "", forKey: "StoreName")
-                    self.performSegue(withIdentifier: "loginToChoice", sender: self)
+                    self.performSegue(withIdentifier: "loginToScanner", sender: self)
                 }
                 
             }

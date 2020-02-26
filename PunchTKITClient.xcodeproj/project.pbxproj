@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B5569BDA0AE6440E16396DB /* Pods_PunchTKITClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58D318CEAE2450D2220438E6 /* Pods_PunchTKITClient.framework */; };
 		C90A469723F25ADB0098D1FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90A469623F25ADB0098D1FA /* AppDelegate.swift */; };
 		C90A469923F25ADB0098D1FA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90A469823F25ADB0098D1FA /* SceneDelegate.swift */; };
 		C90A469B23F25ADB0098D1FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90A469A23F25ADB0098D1FA /* ViewController.swift */; };
@@ -15,6 +16,13 @@
 		C90A46A323F25ADF0098D1FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C90A46A123F25ADF0098D1FA /* LaunchScreen.storyboard */; };
 		C90A46AE23F25AE00098D1FA /* PunchTKITClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90A46AD23F25AE00098D1FA /* PunchTKITClientTests.swift */; };
 		C90A46B923F25AE00098D1FA /* PunchTKITClientUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90A46B823F25AE00098D1FA /* PunchTKITClientUITests.swift */; };
+		C92AD66323F26116005A38CA /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92AD66223F26116005A38CA /* ScannerViewController.swift */; };
+		C92AD66523F262C8005A38CA /* PointsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92AD66423F262C8005A38CA /* PointsViewController.swift */; };
+		C972E83523F268B000A94160 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C972E83423F268B000A94160 /* LoginViewController.swift */; };
+		C9798C2E23F37E4E007571AD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C9798C2B23F37D66007571AD /* GoogleService-Info.plist */; };
+		C9798C3023F4DD25007571AD /* ChoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9798C2F23F4DD25007571AD /* ChoiceViewController.swift */; };
+		CFA6B3043B2A78BEA6B691D3 /* Pods_PunchTKITClient_PunchTKITClientUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C37C948CBC6BC36D3DE6853 /* Pods_PunchTKITClient_PunchTKITClientUITests.framework */; };
+		DC0EBF909559A3E3236952F5 /* Pods_PunchTKITClientTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F75003ADCEEEE8C49A30D2EA /* Pods_PunchTKITClientTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +43,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1B780984521B16E6CDB9776C /* Pods-PunchTKITClientTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PunchTKITClientTests.debug.xcconfig"; path = "Target Support Files/Pods-PunchTKITClientTests/Pods-PunchTKITClientTests.debug.xcconfig"; sourceTree = "<group>"; };
+		287ACB80B29FC3AC395D1B01 /* Pods-PunchTKITClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PunchTKITClient.debug.xcconfig"; path = "Target Support Files/Pods-PunchTKITClient/Pods-PunchTKITClient.debug.xcconfig"; sourceTree = "<group>"; };
+		555014935F1E184AF7E61B17 /* Pods-PunchTKITClientTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PunchTKITClientTests.release.xcconfig"; path = "Target Support Files/Pods-PunchTKITClientTests/Pods-PunchTKITClientTests.release.xcconfig"; sourceTree = "<group>"; };
+		58D318CEAE2450D2220438E6 /* Pods_PunchTKITClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PunchTKITClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8736677F64CC0DA30116173D /* Pods-PunchTKITClient-PunchTKITClientUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PunchTKITClient-PunchTKITClientUITests.debug.xcconfig"; path = "Target Support Files/Pods-PunchTKITClient-PunchTKITClientUITests/Pods-PunchTKITClient-PunchTKITClientUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8C37C948CBC6BC36D3DE6853 /* Pods_PunchTKITClient_PunchTKITClientUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PunchTKITClient_PunchTKITClientUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		97863F787CB6993FABB55E1A /* Pods-PunchTKITClient-PunchTKITClientUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PunchTKITClient-PunchTKITClientUITests.release.xcconfig"; path = "Target Support Files/Pods-PunchTKITClient-PunchTKITClientUITests/Pods-PunchTKITClient-PunchTKITClientUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C90A469323F25ADB0098D1FA /* PunchTKITClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PunchTKITClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C90A469623F25ADB0098D1FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C90A469823F25ADB0098D1FA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +64,13 @@
 		C90A46B423F25AE00098D1FA /* PunchTKITClientUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PunchTKITClientUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C90A46B823F25AE00098D1FA /* PunchTKITClientUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunchTKITClientUITests.swift; sourceTree = "<group>"; };
 		C90A46BA23F25AE00098D1FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C92AD66223F26116005A38CA /* ScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
+		C92AD66423F262C8005A38CA /* PointsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsViewController.swift; sourceTree = "<group>"; };
+		C972E83423F268B000A94160 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		C9798C2B23F37D66007571AD /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "/Users/vishal/Desktop/PunchTKITClient/PunchTKITClient/GoogleService-Info.plist"; sourceTree = "<absolute>"; };
+		C9798C2F23F4DD25007571AD /* ChoiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceViewController.swift; sourceTree = "<group>"; };
+		EF11A86597D3A0008CEC75FB /* Pods-PunchTKITClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PunchTKITClient.release.xcconfig"; path = "Target Support Files/Pods-PunchTKITClient/Pods-PunchTKITClient.release.xcconfig"; sourceTree = "<group>"; };
+		F75003ADCEEEE8C49A30D2EA /* Pods_PunchTKITClientTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PunchTKITClientTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B5569BDA0AE6440E16396DB /* Pods_PunchTKITClient.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC0EBF909559A3E3236952F5 /* Pods_PunchTKITClientTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +94,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFA6B3043B2A78BEA6B691D3 /* Pods_PunchTKITClient_PunchTKITClientUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0BEF79AEFC4652E2221DF41F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				287ACB80B29FC3AC395D1B01 /* Pods-PunchTKITClient.debug.xcconfig */,
+				EF11A86597D3A0008CEC75FB /* Pods-PunchTKITClient.release.xcconfig */,
+				8736677F64CC0DA30116173D /* Pods-PunchTKITClient-PunchTKITClientUITests.debug.xcconfig */,
+				97863F787CB6993FABB55E1A /* Pods-PunchTKITClient-PunchTKITClientUITests.release.xcconfig */,
+				1B780984521B16E6CDB9776C /* Pods-PunchTKITClientTests.debug.xcconfig */,
+				555014935F1E184AF7E61B17 /* Pods-PunchTKITClientTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A70E3EA2568D5B4EA902F5CE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				58D318CEAE2450D2220438E6 /* Pods_PunchTKITClient.framework */,
+				8C37C948CBC6BC36D3DE6853 /* Pods_PunchTKITClient_PunchTKITClientUITests.framework */,
+				F75003ADCEEEE8C49A30D2EA /* Pods_PunchTKITClientTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C90A468A23F25ADB0098D1FA = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +131,8 @@
 				C90A46AC23F25AE00098D1FA /* PunchTKITClientTests */,
 				C90A46B723F25AE00098D1FA /* PunchTKITClientUITests */,
 				C90A469423F25ADB0098D1FA /* Products */,
+				0BEF79AEFC4652E2221DF41F /* Pods */,
+				A70E3EA2568D5B4EA902F5CE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,10 +149,15 @@
 		C90A469523F25ADB0098D1FA /* PunchTKITClient */ = {
 			isa = PBXGroup;
 			children = (
+				C9798C2B23F37D66007571AD /* GoogleService-Info.plist */,
 				C90A469623F25ADB0098D1FA /* AppDelegate.swift */,
 				C90A469823F25ADB0098D1FA /* SceneDelegate.swift */,
+				C92AD66223F26116005A38CA /* ScannerViewController.swift */,
 				C90A469A23F25ADB0098D1FA /* ViewController.swift */,
 				C90A469C23F25ADB0098D1FA /* Main.storyboard */,
+				C9798C2F23F4DD25007571AD /* ChoiceViewController.swift */,
+				C92AD66423F262C8005A38CA /* PointsViewController.swift */,
+				C972E83423F268B000A94160 /* LoginViewController.swift */,
 				C90A469F23F25ADF0098D1FA /* Assets.xcassets */,
 				C90A46A123F25ADF0098D1FA /* LaunchScreen.storyboard */,
 				C90A46A423F25ADF0098D1FA /* Info.plist */,
@@ -135,9 +190,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C90A46BD23F25AE00098D1FA /* Build configuration list for PBXNativeTarget "PunchTKITClient" */;
 			buildPhases = (
+				C3BB6081BDFB645DAE5C64DB /* [CP] Check Pods Manifest.lock */,
 				C90A468F23F25ADB0098D1FA /* Sources */,
 				C90A469023F25ADB0098D1FA /* Frameworks */,
 				C90A469123F25ADB0098D1FA /* Resources */,
+				DB9136A01D786DFF4E7CA573 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +209,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C90A46C023F25AE00098D1FA /* Build configuration list for PBXNativeTarget "PunchTKITClientTests" */;
 			buildPhases = (
+				03E6FEC78BB2E1250A3477EE /* [CP] Check Pods Manifest.lock */,
 				C90A46A523F25AE00098D1FA /* Sources */,
 				C90A46A623F25AE00098D1FA /* Frameworks */,
 				C90A46A723F25AE00098D1FA /* Resources */,
@@ -170,9 +228,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C90A46C323F25AE00098D1FA /* Build configuration list for PBXNativeTarget "PunchTKITClientUITests" */;
 			buildPhases = (
+				3778E58AB03B606F6E9C73C1 /* [CP] Check Pods Manifest.lock */,
 				C90A46B023F25AE00098D1FA /* Sources */,
 				C90A46B123F25AE00098D1FA /* Frameworks */,
 				C90A46B223F25AE00098D1FA /* Resources */,
+				623288BEE9DE3156964C6639 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -233,6 +293,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C90A46A323F25ADF0098D1FA /* LaunchScreen.storyboard in Resources */,
+				C9798C2E23F37E4E007571AD /* GoogleService-Info.plist in Resources */,
 				C90A46A023F25ADF0098D1FA /* Assets.xcassets in Resources */,
 				C90A469E23F25ADB0098D1FA /* Main.storyboard in Resources */,
 			);
@@ -254,14 +315,121 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		03E6FEC78BB2E1250A3477EE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PunchTKITClientTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3778E58AB03B606F6E9C73C1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PunchTKITClient-PunchTKITClientUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		623288BEE9DE3156964C6639 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PunchTKITClient-PunchTKITClientUITests/Pods-PunchTKITClient-PunchTKITClientUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PunchTKITClient-PunchTKITClientUITests/Pods-PunchTKITClient-PunchTKITClientUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PunchTKITClient-PunchTKITClientUITests/Pods-PunchTKITClient-PunchTKITClientUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3BB6081BDFB645DAE5C64DB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PunchTKITClient-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB9136A01D786DFF4E7CA573 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PunchTKITClient/Pods-PunchTKITClient-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PunchTKITClient/Pods-PunchTKITClient-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PunchTKITClient/Pods-PunchTKITClient-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C90A468F23F25ADB0098D1FA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C972E83523F268B000A94160 /* LoginViewController.swift in Sources */,
+				C92AD66523F262C8005A38CA /* PointsViewController.swift in Sources */,
 				C90A469B23F25ADB0098D1FA /* ViewController.swift in Sources */,
 				C90A469723F25ADB0098D1FA /* AppDelegate.swift in Sources */,
 				C90A469923F25ADB0098D1FA /* SceneDelegate.swift in Sources */,
+				C92AD66323F26116005A38CA /* ScannerViewController.swift in Sources */,
+				C9798C3023F4DD25007571AD /* ChoiceViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +600,7 @@
 		};
 		C90A46BE23F25AE00098D1FA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 287ACB80B29FC3AC395D1B01 /* Pods-PunchTKITClient.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -450,6 +619,7 @@
 		};
 		C90A46BF23F25AE00098D1FA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF11A86597D3A0008CEC75FB /* Pods-PunchTKITClient.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -468,6 +638,7 @@
 		};
 		C90A46C123F25AE00098D1FA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B780984521B16E6CDB9776C /* Pods-PunchTKITClientTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -490,6 +661,7 @@
 		};
 		C90A46C223F25AE00098D1FA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 555014935F1E184AF7E61B17 /* Pods-PunchTKITClientTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +684,7 @@
 		};
 		C90A46C423F25AE00098D1FA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8736677F64CC0DA30116173D /* Pods-PunchTKITClient-PunchTKITClientUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -532,6 +705,7 @@
 		};
 		C90A46C523F25AE00098D1FA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97863F787CB6993FABB55E1A /* Pods-PunchTKITClient-PunchTKITClientUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

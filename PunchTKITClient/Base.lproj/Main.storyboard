@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,169 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PunchTKITClient" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Kf-G4-O4o">
+                                <rect key="frame" x="20" y="481" width="335" height="47"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="30"/>
+                                <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="loginButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CtL-Js-Sbf"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Store Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wAx-OQ-c0p">
+                                <rect key="frame" x="20" y="338" width="335" height="43"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="30"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="wAx-OQ-c0p" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="IyS-a4-OaM"/>
+                            <constraint firstItem="3Kf-G4-O4o" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="JgI-Ux-4Ut"/>
+                            <constraint firstItem="3Kf-G4-O4o" firstAttribute="top" secondItem="wAx-OQ-c0p" secondAttribute="bottom" constant="100" id="Q46-qT-lM9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3Kf-G4-O4o" secondAttribute="bottom" constant="250" id="dBe-kj-Pvk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wAx-OQ-c0p" secondAttribute="trailing" constant="20" id="mL7-bM-cLb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3Kf-G4-O4o" secondAttribute="trailing" constant="20" id="qBn-iJ-Mio"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="storeNameTextEdit" destination="wAx-OQ-c0p" id="eNy-hx-Uo3"/>
+                        <segue destination="BlK-o0-2Ns" kind="show" identifier="loginToChoice" id="VHK-uT-BE0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-398" y="148"/>
+        </scene>
+        <!--Choice View Controller-->
+        <scene sceneID="iI7-mq-llu">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="BlK-o0-2Ns" customClass="ChoiceViewController" customModule="PunchTKITClient" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="49b-xW-Mu9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zrq-CH-Sp6">
+                                <rect key="frame" x="16" y="124" width="343" height="47"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="30"/>
+                                <state key="normal" title="Scan QR Code"/>
+                                <connections>
+                                    <action selector="awardPoint:" destination="Y2x-e5-QLb" eventType="touchUpInside" id="tb3-7d-uzt"/>
+                                    <segue destination="6Vc-Sm-Y4D" kind="show" id="Mfk-4r-U9W"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="76W-kL-TuB">
+                                <rect key="frame" x="16" y="399" width="343" height="47"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="30"/>
+                                <state key="normal" title="Continue"/>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b4W-im-09b">
+                                <rect key="frame" x="16" y="306" width="343" height="43"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="30"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tac-zb-W3a">
+                                <rect key="frame" x="165" y="221" width="45" height="35"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="30"/>
+                                <color key="textColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="mEh-yT-mlz" firstAttribute="trailing" secondItem="Zrq-CH-Sp6" secondAttribute="trailing" constant="16" id="BwI-qk-BdU"/>
+                            <constraint firstItem="mEh-yT-mlz" firstAttribute="trailing" secondItem="76W-kL-TuB" secondAttribute="trailing" constant="16" id="El7-AG-kfU"/>
+                            <constraint firstItem="76W-kL-TuB" firstAttribute="top" secondItem="b4W-im-09b" secondAttribute="bottom" constant="50" id="HZq-xv-UhD"/>
+                            <constraint firstItem="b4W-im-09b" firstAttribute="top" secondItem="Tac-zb-W3a" secondAttribute="bottom" constant="50" id="Ip7-ZA-BwL"/>
+                            <constraint firstItem="Tac-zb-W3a" firstAttribute="top" secondItem="Zrq-CH-Sp6" secondAttribute="bottom" constant="50" id="Mus-0g-VH2"/>
+                            <constraint firstItem="mEh-yT-mlz" firstAttribute="trailing" secondItem="Tac-zb-W3a" secondAttribute="trailing" constant="165" id="Sht-ro-K2K"/>
+                            <constraint firstItem="Tac-zb-W3a" firstAttribute="leading" secondItem="mEh-yT-mlz" secondAttribute="leading" constant="165" id="TjN-rf-bY1"/>
+                            <constraint firstItem="Tac-zb-W3a" firstAttribute="top" secondItem="Zrq-CH-Sp6" secondAttribute="bottom" constant="50" id="WHt-fh-R2G"/>
+                            <constraint firstItem="Zrq-CH-Sp6" firstAttribute="top" secondItem="mEh-yT-mlz" secondAttribute="top" constant="80" id="Wt0-MF-rgS"/>
+                            <constraint firstItem="mEh-yT-mlz" firstAttribute="trailing" secondItem="b4W-im-09b" secondAttribute="trailing" constant="16" id="a2g-js-JoH"/>
+                            <constraint firstItem="76W-kL-TuB" firstAttribute="leading" secondItem="mEh-yT-mlz" secondAttribute="leading" constant="16" id="dem-6u-SCT"/>
+                            <constraint firstItem="76W-kL-TuB" firstAttribute="top" secondItem="b4W-im-09b" secondAttribute="bottom" constant="50" id="jwa-hn-4DP"/>
+                            <constraint firstItem="b4W-im-09b" firstAttribute="leading" secondItem="mEh-yT-mlz" secondAttribute="leading" constant="16" id="kKh-Dl-m1Y"/>
+                            <constraint firstItem="b4W-im-09b" firstAttribute="top" secondItem="Tac-zb-W3a" secondAttribute="bottom" constant="50" id="rbD-U7-QBu"/>
+                            <constraint firstItem="Zrq-CH-Sp6" firstAttribute="leading" secondItem="mEh-yT-mlz" secondAttribute="leading" constant="16" id="xdL-Cv-5Uu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="mEh-yT-mlz"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="0pE-G7-Shi"/>
+                    <connections>
+                        <outlet property="continueButton" destination="76W-kL-TuB" id="mel-l3-UBu"/>
+                        <outlet property="phoneNumberTextFields" destination="b4W-im-09b" id="P8V-CW-te6"/>
+                        <segue destination="Y2x-e5-QLb" kind="show" identifier="phoneToPoints" id="Cvv-VJ-P4p"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uFk-NC-D7g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="372" y="148"/>
+        </scene>
+        <!--Scanner View Controller-->
+        <scene sceneID="bei-Mz-CE3">
+            <objects>
+                <viewController id="6Vc-Sm-Y4D" customClass="ScannerViewController" customModule="PunchTKITClient" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SwI-nK-v2j">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="08J-h5-CmR"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ZWf-gE-dRD"/>
+                    <connections>
+                        <segue destination="Y2x-e5-QLb" kind="popoverPresentation" identifier="scanToPoints" popoverAnchorView="SwI-nK-v2j" id="0jp-bH-Xfx">
+                            <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                        </segue>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZVf-2V-vC9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1202" y="148"/>
+        </scene>
+        <!--Points View Controller-->
+        <scene sceneID="nz4-vc-Bdx">
+            <objects>
+                <viewController id="Y2x-e5-QLb" customClass="PointsViewController" customModule="PunchTKITClient" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yBU-zK-UlX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N98-pz-9FG">
+                                <rect key="frame" x="20" y="175" width="374" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="30"/>
+                                <state key="normal" title="Award Point"/>
+                                <connections>
+                                    <action selector="awardPoint:" destination="Y2x-e5-QLb" eventType="touchUpInside" id="zAS-sR-wfc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dw0-4h-qnT">
+                                <rect key="frame" x="20" y="622" width="374" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="30"/>
+                                <state key="normal" title="Redeem Points"/>
+                                <connections>
+                                    <action selector="redeemPoints:" destination="Y2x-e5-QLb" eventType="touchUpInside" id="1t5-ck-KDo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="7LH-Gd-uGC"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="IZR-ME-XF1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6zF-y7-bVy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2012" y="148"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="0jp-bH-Xfx"/>
+    </inferredMetricsTieBreakers>
 </document>
